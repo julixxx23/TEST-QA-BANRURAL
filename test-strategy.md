@@ -29,4 +29,6 @@ Errores encontrados y corregidos
 
 11) randomNumber = Math.floor(Math.random() * 100)+1;  // generado un numero de 1 a 10 erroneamente, fue corregido para que sea de 1  a 100
 
+12) if(parseInt(userGuess) == randomNumber) // son distitos, uno era un string y el otro un number, por tanto nunca se cumpliria la condicion
+
 Nota: Todo lo detallado y documentado fue testeado multiples veces en la consola del navegador y tambien, analizado el funcionamiento del codigo, con la logica del programa descrita en los requerimientos tanto para el desarollador como el usuario final.

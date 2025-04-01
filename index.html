@@ -69,8 +69,8 @@
     }
     guesses.textContent += userGuess + ' ';
 
-    if(userGuess === randomNumber) {
-      lastResult.textContent = 'Felicitaciones! adivinaste el número!'; // estaba invertido ya qeue aqui iba el felicitaciones ganaste
+    if(parseInt(userGuess) == randomNumber) { // son distitos, uno era un string y el otro un number, por tanto nunca se cumpliria la condicion
+      lastResult.textContent = 'Felicitaciones! adivinaste el número!'; // estaba invertido ya que aqui iba el felicitaciones ganaste
       lastResult.style.backgroundColor = 'green'; // el color estaba malo, ya que tendria que ser verde
       lowOrHi.textContent = ''; 
       setGameOver();
